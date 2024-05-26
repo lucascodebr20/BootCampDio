@@ -7,20 +7,20 @@ public class ForEcach {
         try {
             
             String[] numerosTelefonicos = new String[] {
-                "1234567890", 
-                "9876543210", 
-                "555notanum", 
-                "8001234567", 
-                "12345abcde", 
-                "4445556666", 
-                "12ab345678", 
-                "7778889999",
-                "9990001234", 
-                "phone12345"  
+                "500", 
+                "1000", 
+                "not", 
+                "8000", 
+                "ade", 
+                "4400", 
+                "ab3", 
+                "7700",
+                "9900", 
+                "ph"  
             };
 
             ArrayList<String> numerosErrados = new ArrayList<>();
-            ArrayList<String> numerosCorretos = new ArrayList<>();   
+            ArrayList<String> numerosCorretos = new ArrayList<>();
             
             for (String numero : numerosTelefonicos) {
                 try {
@@ -31,7 +31,12 @@ public class ForEcach {
                 }
             }
 
+            System.out.println("Numeros Errados: ");
             System.out.println(numerosErrados); // Teste para ver a coleta dos numeros
+            System.out.println("");
+            System.out.println("Numeros Corretos: ");
+            System.out.println(numerosCorretos);
+            System.out.println("");
 
         } catch (Exception e) {}
     }
