@@ -24,17 +24,15 @@ public class ForEcach {
             
             for (String numero : numerosTelefonicos) {
                 try {
-                    int numeroConvertido = Integer.parseInt(numero);
-                    numerosCorretos.add(numeroConvertido);
+                    Integer.valueOf(numero);
+                    numerosCorretos.add(numero);
                 } catch (NumberFormatException e) {
                     numerosErrados.add(numero);
                 }
             }
 
-            System.out.println(numerosErrados); // Teste para ver a coleta
+            System.out.println(numerosErrados); // Teste para ver a coleta dos numeros
 
-        } catch (Exception e) {
-
-        }
+        } catch (Exception e) {}
     }
 }
