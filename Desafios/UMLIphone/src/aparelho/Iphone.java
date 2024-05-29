@@ -11,12 +11,18 @@ public class Iphone {
     ReprodutorMusical musica = new ReprodutorMusical();
     AparelhoTelefonico telefonar = new AparelhoTelefonico();
     NavegadorInternet navegar = new NavegadorInternet();
+
+    int quantidadeCorreiosVoz = 5;
     
     musica.tocar();
     musica.pausar();
+    navegar.exibirPagina("wwww.google.com.br");
+    navegar.atualizarPagina();
     navegar.adicionarNovaAba();
-    telefonar.ligar("47968900");
-
+    telefonar.atender();
+    telefonar.ligar("997968900");
+    telefonar.iniciarCorreioVoz(quantidadeCorreiosVoz);
+    
     }
 
 }

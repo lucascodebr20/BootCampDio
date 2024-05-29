@@ -1,9 +1,10 @@
-# [DIO](www.dio.me) - Trilha Java Básico
+
+<img src="UML/Classe UML.png" alt="UML Criado para exercicio">
+
+## POO - Desafio
 
 ## Autores
 - [Gleyson Sampaio](https://github.com/glysns)
-
-## POO - Desafio
 
 ### Modelagem e Diagramação de um Componente iPhone
 
