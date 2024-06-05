@@ -15,14 +15,14 @@ public class CarrinhoDeCompra {
     public static void main(String[] args) {
 
         CarrinhoDeCompra carrinho1 = new CarrinhoDeCompra();
-        double valorTotal;
 
-        carrinho1.adicionarItem ("Camiseta A",10,50.50);
+        carrinho1.adicionarItem ("Camiseta A",1,50.00);
         carrinho1.adicionarItem ("Camiseta B",2,49.50);
-        carrinho1.adicionarItem ("Camiseta A",1,50.50);
-        carrinho1.adicionarItem ("Camiseta A",1,50.50);
+        carrinho1.adicionarItem ("Camiseta A",1,50.00);
+        carrinho1.adicionarItem ("Camiseta A",1,50.00);
         carrinho1.removerItem("Camiseta B");
         carrinho1.imprimirPedido();
+        carrinho1.somarPedido();
 
     }
 
@@ -35,8 +35,13 @@ public class CarrinhoDeCompra {
     };
 
     public void somarPedido() {
-        
-    };
+        double total = 0;
+        for (Produto produto : carrinhoCompra) {
+            total += produto.getPreco() * produto.getQuantidade();
+        }
+
+        System.out.println("Total do Pedido: R$ " + total);
+    }
 
     public void imprimirPedido() {
         System.out.println("Pedido:");
